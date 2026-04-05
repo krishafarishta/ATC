@@ -123,3 +123,110 @@ footer {
   color: #333333;
   margin-bottom: 1rem;
 }
+
+footer {
+  background: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #000000, #3533cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contacts a:hover {
+  color: #3533cd;
+}
+
+.footer-bottom {
+  color: #666666;
+  font-size: 0.85rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+.catalogue {
+  padding: 4rem 2rem;
+}
+
+main.catalogue {
+  display: block;  /* overrides the flex from homepage */
+  padding: 4rem 2rem;
+}
+
+.product-section {
+  margin-bottom: 6rem;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #000000, #3533cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.fiber-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;  /* removes fixed height, shows full image */
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.product-card p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333333;
+}
