@@ -1,6 +1,4 @@
-/* ================================
-   BASE
-================================ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,9 +13,7 @@ body {
   background-color: #f5f5f5;
 }
 
-/* ================================
-   NAVBAR
-================================ */
+/*NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -68,9 +64,7 @@ body {
   transform: scale(0.96);
 }
 
-/* ================================
-   ABOUT PAGE
-================================ */
+/*ABOUT PAGE*/
 main {
   flex: 1;
   display: flex;
@@ -113,9 +107,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* ================================
-   PRODUCTS PAGE
-================================ */
+/*PRODUCTS PAGE*/
 main.catalogue {
   display: block;
   padding: 4rem 2rem;
@@ -173,9 +165,7 @@ main.catalogue {
   color: #333333;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 footer {
   background: #000000;
   padding: 3rem 2rem;
@@ -218,9 +208,7 @@ footer {
   font-family: 'Barlow', sans-serif;
 }
 
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 @media (max-width: 768px) {
 
   /* Navbar */
