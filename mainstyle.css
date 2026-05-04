@@ -1,4 +1,6 @@
-
+/* ================================
+   BASE
+================================ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +15,9 @@ body {
   background-color: #f5f5f5;
 }
 
-/*NAVBAR */
+/* ================================
+   NAVBAR
+================================ */
 .navbar {
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@ body {
   font-weight: 600;
 }
 
+/* Filled button - Contact */
 .nav-links a.contact-btn {
   color: #ffffff;
   background-color: #000000;
@@ -64,7 +69,29 @@ body {
   transform: scale(0.96);
 }
 
-/*ABOUT PAGE*/
+/* Outline button - Products */
+.nav-links a.outline-btn {
+  color: #000000;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.nav-links a.outline-btn:hover {
+  background: linear-gradient(135deg, #000000, #3533cd);
+  border-color: #3533cd;
+  color: #ffffff;
+}
+
+.nav-links a.outline-btn:active {
+  transform: scale(0.96);
+}
+
+/* ================================
+   ABOUT PAGE
+================================ */
 main {
   flex: 1;
   display: flex;
@@ -107,7 +134,9 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/*PRODUCTS PAGE*/
+/* ================================
+   PRODUCTS PAGE
+================================ */
 main.catalogue {
   display: block;
   padding: 4rem 2rem;
@@ -127,12 +156,14 @@ main.catalogue {
   display: block;
 }
 
+/* 3 column grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
+/* 2 column grid */
 .fiber-grid {
   grid-template-columns: repeat(2, 1fr);
   max-width: 600px;
@@ -151,9 +182,11 @@ main.catalogue {
   transform: translateY(-4px);
 }
 
+/* Uniform image height */
 .product-card img {
   width: 100%;
-  height: auto;
+  height: 550px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 0.75rem;
 }
@@ -165,7 +198,9 @@ main.catalogue {
   color: #333333;
 }
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 footer {
   background: #000000;
   padding: 3rem 2rem;
@@ -208,7 +243,9 @@ footer {
   font-family: 'Barlow', sans-serif;
 }
 
-/* MOBILE */
+/* ================================
+   MOBILE
+================================ */
 @media (max-width: 768px) {
 
   /* Navbar */
@@ -228,7 +265,8 @@ footer {
     font-size: 0.9rem;
   }
 
-  .nav-links a.contact-btn {
+  .nav-links a.contact-btn,
+  .nav-links a.outline-btn {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
